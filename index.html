@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+  <title>Notifier App</title>
+  <link rel="icon" type="image/x-icon" href="doggo.webp">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Notifier App</div>
+      <div class="button-wrapper">
+        <button class="navbtn" id="login" onclick="tologin();">Log in</button>
+        <button class="navbtn" id="signup" onclick="tosignup();">Sign Up</button>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="box">
+      <div class="box-content">
+        <h2>About app</h2>
+        <p>Simple reminder, you can add notification to list and whenever desired date came yours Windows PC will give
+          you notification with given message.</p>
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content" style="color: red;">
+        <h2>SECURITY</h2>
+        <p>THIS APP IS NOT 100% SECURE!!! <br> Data base is encrypted but everyone can acces it and try to breach it.
+        </p>
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content" style="color: #c19710;">
+        <h2>Important</h2>
+        <p>API is hosted on a different Replit project and sometimes requires posting login/register form twice. Once to
+          wake up the API project (takes around 10 seconds) and a second one to perform the login or register action.
+        </p>
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Source code</h2>
+        <p>App itself is hosted on Replit, so you can view code from there but also you can find source code here:
+          <a>Github(in progress).</a>
+        </p>
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Why this is created?</h2>
+        <ul>
+          <li>Just for fun</li>
+          <li>Yes. I'm bored</li>
+        </ul>
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Funny Cat</h2>
+        <img
+          src="https://th.bing.com/th/id/R.f83c07d0f3b9b5b675978840fb853a94?rik=yKuXjlBMWPzsRA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-dZ4VlGvH9vc%2fUBlJXsjGreI%2fAAAAAAAARvA%2fSKXP-99TZaM%2fs1600%2ffunny-cat-pictures-009-045.jpg&ehk=grXffVQODzBpt9kVJIK8a8AiYziWaeb6tev7AIOtw4I%3d&risl=&pid=ImgRaw&r=0"
+          width="70%" margin="auto" />
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Funny Dog</h2>
+        <img src="doggo.webp" width="70%" margin="auto" />
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Logging out</h2>
+        <p>User information is stored in local storage and its not cleared until "Log out" button is pressed.
+          Information stored in Local storage allows editing all notification information for that user.</p>
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>HELP ME!</h2>
+        <p>Please help me i'm under the water!<br />Anyway i have solved UI problems. Its time to clean code a bit...<br/>Nvm. Resolution over FHD breaks everything ☻.
+        </p>
+      </div>
+      <div class="glow"></div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h2>Q&A</h2>
+        <ol>
+          <li>Q: Is my data safe?
+            <p>A: Data stored in Data base is encrypted. But everyone can see encrypted data and try to decrypt it.</p>
+          </li>
+          <li>Q: Notification dont work
+            <p>A: Change webpage settings and allow notification to be shown</p>
+          </li>
+          <li>Q: Why? Why it is created?
+            <p>Don't know neither.</p>
+          </li>
+          </li>
+          <li>Q: Does it works on mobile?
+            <p>Adding Notifications - Yes<br>Displaying them - not really</p>
+          </li>
+          </ul>
+      </div>
+      <div class="glow"></div>
+    </div>
+
+    <div class="cursor"></div>
+
+  </main>
+  <footer>
+    <p>Made by <a id="footerLink" href="https://github.com/foroko1o" target="_blank">FoRoKo</a>
+    </p>
+  </footer>
+  <div id="pointer-light"></div>
+  <script src="script.js"></script>
+  <script src="animations.js"></script>
+</body>
+
+</html>

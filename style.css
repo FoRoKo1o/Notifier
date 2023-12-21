@@ -1,0 +1,264 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+#footerLink {
+  color: gray;
+}
+
+#footerLink:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+}
+
+header {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
+    height: 3vh;
+}
+
+nav {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.button-wrapper {
+  justify-content: flex-end;
+}
+
+.navbtn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px;
+}
+#login{
+  border: 1px solid #73ff00;
+  background-color: #334633;
+}
+
+#login:hover {
+  box-shadow: 0 0 5px #73ff00;
+  background-color: #516451;
+  transition: 1s;
+}
+#signup{
+  border: 1px solid #333;
+  background-color: #333;
+}
+.remove-button{
+  border: 1px solid #c80000;
+  background-color: #963333;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.remove-button:hover {
+  box-shadow: 0 0 5px #ff0000;
+  background-color: #ff3333;
+  transition: 1s;
+}
+#signup:hover {
+  box-shadow: 0 0 5px #d1d1d1;
+  background-color: #696969;
+  transition: 1s;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add styles for the main content grid */
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+  height: 80vh;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  grid-gap: 5vh 5vh;
+  padding: 10px;
+}
+.dashboard-container{
+  padding-top: 10vh;
+  margin-bottom: -20vh;
+}
+.box {
+    background-color: #26303b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, scale 0.3s ease-in-out; /* Added scale transition */
+    text-align: justify;
+    overflow: hidden;
+  overflow-wrap: break-word; /* Added text wrapping */
+    min-height: 30vh;
+    min-width: 30vh;
+}
+
+/* Style for text or images inside the box */
+.box-content {
+    color: white;
+  max-height: 90%;
+    overflow-y: auto; /* Add a vertical scrollbar if the content overflows */
+}
+
+/* Add animation for the "pop up" effect when boxes are displayed */
+.box.active {
+    transform: translateY(0) scale(1); /* Scale to 100% on hover */
+    opacity: 0.8;
+}
+.box:hover {
+    transform: scale(0.9); /* Shrink to 90% on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    text-align: center;
+    position: fixed;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3vh;
+    transform: translateY(100%);
+    transition: transform 1s ease-in-out;
+}
+
+/* Style for the login container and form */
+.login-container {
+    background-color: #444; /* Background color of the login container */
+    color: #fff; /* Text color */
+    padding: 20px;
+    margin: 10vh;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label,textarea {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+#formbutton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 1vh;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+header.active {
+  transform: translateY(0);
+}
+
+footer.active {
+  transform: translateY(0);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 6px; /* Adjust the border-radius to match the thumb */
+  margin: 8px 0; /* Adjust the top and bottom margin to make the track shorter */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #56ABD0;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4297bc;
+  cursor: pointer;
+}
+
+ul,li {
+  margin: 2.5px;
+  padding: 0;
+}
+
+
+.glow {
+    content: "";
+    position: absolute;
+    background: radial-gradient(circle, #4172A8, transparent 70%); /* Changed color to green */
+    width: 400px; /* Increased width */
+    height: 400px; /* Increased height */
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.7; /* Made it darker */
+   z-index: -1;
+}
+
+.box:hover .glow {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}

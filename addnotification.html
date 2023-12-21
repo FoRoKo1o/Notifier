@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Notifier App</title>
+  <link rel="icon" type="image/x-icon" href="doggo.webp">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Notifier App</div>
+      <div class="button-wrapper">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="login-container">
+      <h1>Add Notification</h1>
+      <form id="notification-form">
+        <label for="hour">Hour:</label>
+        <input type="time" id="hour" name="hour" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+        <button id="formbutton">Submit</button>
+      </form>
+      <div id="api-response"></div>
+    </div>
+  </main>
+  <footer>
+    <p>Made by <a id="footerLink" href="https://github.com/foroko1o" target="_blank">FoRoKo</a>
+    </p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="addnotification.js"></script>
+</body>
+
+</html>
